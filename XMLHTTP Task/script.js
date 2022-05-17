@@ -7,12 +7,12 @@ function getCountries(){
         const countriesinfo=data.response;
         console.log(countriesinfo);
 
- // display all the country flags in console
+ // 2.display all the country flags in console
         countriesinfo.forEach(country => {
             console.log(`${country.name.common} - ${country.flag}`)
         });
 
-//print all countries name, region, sub region and population
+// 3.print all countries name, region, sub region and population
         countriesinfo.forEach(country => {
             console.log(`
             Name:${country.name.common}
